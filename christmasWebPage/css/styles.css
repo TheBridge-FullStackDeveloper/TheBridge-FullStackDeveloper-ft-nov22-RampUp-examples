@@ -1,0 +1,37 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: rgb(235, 202, 202); 
+}
+
+section {
+    border-style: solid;
+    border-color: beige;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,
+td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid black;
+}
+
+header>nav>ul {
+    list-style-type: none;
+}
+
+header>nav>ul>li {
+    display: inline;
+}
+
+#logo {
+    width: 100px;
+}
+

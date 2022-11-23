@@ -13,7 +13,7 @@
 
     <header>
         <img src="./assets/snow-globe.png" id="logo" alt="">
-        <nav>
+        <nav class="center">
             <!-- ul>(li>a)*3 -->
             <ul>
                 <li><a href="">Home</a></li>
@@ -29,10 +29,10 @@
 
     <main>
 
-        <h1>Mi página de navidad</h1>
+        <h1 class="center">Mi página de navidad</h1>
 
         <section id="eventos">
-            <h2>Eventos navideños</h2>
+            <h2 class="center">Eventos navideños</h2>
             <article>
                 <h3>München Weihnachtsmarkt</h3>
                 <p>
@@ -88,7 +88,7 @@
         </section>
 
         <section id="opiniones">
-            <h2>Opiniones</h2>
+            <h2 class="center">Opiniones</h2>
 
             <article>
                 <h3>La mejor bebida de la navidad es Glühwein</h3>
@@ -114,7 +114,7 @@
         </section>
 
         <section id="regalos">
-            <h2>Mi lista de regalos para estas navidades</h2>
+            <h2 class="center">Mi lista de regalos para estas navidades</h2>
             <!-- ul>(li>h4+p)*3 -->
             <ul>
                 <li>
@@ -133,7 +133,7 @@
         </section>
 
         <section id="comidas">
-            <h2>Comidas típicas por país</h2>
+            <h2 class="center">Comidas típicas por país</h2>
             <table>
                 <tr>
                     <th>País</th>
@@ -158,9 +158,63 @@
             </table>
         </section>
 
+        <section id="contact">
+            <h2 class="center">Contacto</h2>
+            <form action="#">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name"><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br><br>
+
+                <label for="message">Message:</label><br>
+                <textarea name="message" id="message" cols="30" rows="10"
+                    placeholder="Introduce texto..."></textarea><br>
+
+
+                <span>Favoritos</span><br>
+
+                <input type="radio" id="food" name="food" value="food">
+                <label for="food">Comida</label><br>
+
+                <input type="radio" id="css" name="gifts" value="gifts">
+                <label for="gifts">Regalos</label><br>
+
+                <input type="radio" id="party" name="party" value="party">
+                <label for="party">Fiesta</label><br>
+
+                <label for="event">Evento al que asisitirías</label><br>
+                <select id="event" name="event" ><br>
+                    <option value="markt">München Weihnachtsmarkt</option>
+                    <option value="santa">Santa Claus Village</option>
+                    <option value="corty">Cortylandia</option>
+                    <option value="wwf">WWF Christmas</option>
+                </select><br>
+
+                <label for="vehicle1">Acepto condiciones de uso</label>
+                <input type="checkbox" id="conditions" name="conditions" value="conditions"><br>
+
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+
+        <section>
+            <h2 class="center">Localización</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.4284767122276!2d-3.694859984197947!3d40.42151017936469!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4229dd28bc4f6b%3A0x1b818ff2f527183b!2sThe%20Bridge%20%7C%20Digital%20Talent%20Accelerator!5e0!3m2!1ses!2ses!4v1669196964808!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+
+        <section>
+            <h2>Media</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/k_KOK8zHUxM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
+
     </main>
 
-    <footer>Hola, soy un footer</footer>
+    <footer class="center">
+        <p>Company ©ChristmasTB. All rights reserved</p>
+        <p>Made with &#9829; by Alex & Guille</p>
+
+    </footer>
 </body>
 
 </html>

@@ -1,19 +1,28 @@
-*{
+* {
     font-family: Arial, Helvetica, sans-serif;
+    color: #003E1F;
 }
 
 body {
-    background-color: rgb(235, 202, 202); 
+    background-color: #D5F2E3;
+    margin: 0px;
 }
 
 section {
-    border-style: solid;
-    border-color: beige;
+    border-style: dashed;
+    border-color: #D90429;
+    margin: 10px 20px;
+    padding: 0 30px 10px 30px;
 }
 
 table {
     border-collapse: collapse;
     width: 100%;
+}
+
+header {
+    background-color: #003E1F;
+    padding-bottom: 5px;
 }
 
 th,
@@ -23,15 +32,42 @@ td {
     border-bottom: 1px solid black;
 }
 
+footer {
+    background-color: #D90429;
+    padding: 10px 0;
+
+}
+
+footer>p {
+    color: #D5F2E3;
+    font-weight: bold;
+    font-size: 20px;
+}
+
 header>nav>ul {
     list-style-type: none;
 }
 
 header>nav>ul>li {
     display: inline;
+    padding: 20px;
+
+}
+
+header>nav>ul>li:hover {
+    background-color: #EF233C;
+}
+
+header>nav>ul>li>a {
+    color: #D5F2E3;
+    font-size: 20px;
+    text-decoration: none;
 }
 
 #logo {
     width: 100px;
 }
 
+.center {
+    text-align: center;
+}

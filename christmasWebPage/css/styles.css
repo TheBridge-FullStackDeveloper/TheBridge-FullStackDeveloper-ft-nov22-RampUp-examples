@@ -6,7 +6,12 @@
 body {
     background-color: #D5F2E3;
     margin: 0px;
+    position: relative;
 }
+main{
+    padding-bottom: 125px;
+}
+
 
 section {
     border-style: dashed;
@@ -23,6 +28,9 @@ table {
 header {
     background-color: #003E1F;
     padding-bottom: 5px;
+    position: sticky;
+    top:0;
+    opacity: 0.9;
 }
 
 th,
@@ -35,7 +43,9 @@ td {
 footer {
     background-color: #D90429;
     padding: 10px 0;
-
+    width:100%;
+    position: absolute;
+    bottom: 0;
 }
 
 footer>p {

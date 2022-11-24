@@ -9,7 +9,7 @@ body {
     position: relative;
 }
 main{
-    padding-bottom: 125px;
+    min-height: 100vh; 
 }
 
 

@@ -27,12 +27,16 @@ table {
 }
 
 header {
+    display:flex;
+    align-items: center;
     background-color: #003E1F;
+    padding:10px;
     padding-bottom: 5px;
     position: sticky;
     top:0;
     opacity: 0.9;
 }
+
 
 th,
 td {
@@ -57,6 +61,9 @@ footer>p {
 
 header>nav>ul {
     list-style-type: none;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 header>nav>ul>li {
@@ -77,6 +84,7 @@ header>nav>ul>li>a {
 
 #logo {
     width: 100px;
+    height:100px;
 }
 
 .center {

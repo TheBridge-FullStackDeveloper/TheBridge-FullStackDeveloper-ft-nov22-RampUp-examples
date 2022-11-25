@@ -6,7 +6,6 @@
 body {
     background-color: #D5F2E3;
     margin: 0px;
-    position: relative;
 }
 main{
     min-height: 100vh;
@@ -49,8 +48,6 @@ footer {
     background-color: #D90429;
     padding: 10px 0;
     width:100%;
-    position: absolute;
-    bottom: 0;
 }
 
 footer>p {

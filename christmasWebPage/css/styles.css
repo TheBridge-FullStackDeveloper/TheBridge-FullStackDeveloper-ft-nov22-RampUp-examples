@@ -9,7 +9,7 @@ body {
 }
 main{
     min-height: 100vh;
-    padding-bottom: 125px;
+
 }
 
 
@@ -84,6 +84,65 @@ header>nav>ul>li>a {
     height:100px;
 }
 
+#location{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .center {
     text-align: center;
+}
+
+.centered-content{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.formulario-contacto{
+    display:flex;
+    flex-direction: column;
+    width:100%;
+    gap:10px;
+}
+
+input[type=text],input[type=email],input[type=submit],select{
+    height: 30px;
+    border-radius: 15px;
+}
+
+input[type=submit]:hover{
+    background-color: #003E1F;
+    color:#D5F2E3;
+
+}
+
+textarea{
+    border-radius: 15px;
+}
+
+textarea::placeholder{
+    position:absolute;
+    top:15px;
+    left:15px;
+}
+
+
+
+@media only screen and (min-width: 600px) {
+
+    input[type=text],input[type=email],input[type=submit],select{
+        height: 20px;
+    }
+
+    .formulario-contacto{
+        width:50%
+    }
+
+
+
 }

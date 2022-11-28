@@ -12,7 +12,13 @@
 <body>
 
     <header>
-        <img src="./assets/snow-globe.png" id="logo" alt="">
+        <div id="icons">
+            <img src="./assets/snow-globe.png" id="logo" alt="">
+            <label for="burger-checkbox">
+                <img src="./assets/burger_icon.png" id="burger" alt="burguer icon">
+            </label>
+        </div>
+        <input type="checkbox" id="burger-checkbox">
         <nav class="center">
             <!-- ul>(li>a)*3 -->
             <ul>
@@ -27,6 +33,7 @@
                 <li><a href="./pages/about.html">About</a></li>
             </ul>
         </nav>
+
     </header>
 
     <main>
@@ -180,8 +187,7 @@
                 <input type="email" id="email" name="email" required>
 
                 <label for="message">Message:</label>
-                <textarea name="message" id="message" cols="30" rows="10"
-                    placeholder="Introduce texto..."></textarea>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Introduce texto..."></textarea>
 
 
                 <span>Favoritos</span>
@@ -205,7 +211,7 @@
                 <div>
                     <input type="checkbox" id="conditions" name="conditions" value="conditions">
                     <label for="vehicle1">Acepto condiciones de uso</label>
-                  
+
                 </div>
                 <input type="submit" value="Enviar">
             </form>

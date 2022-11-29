@@ -162,5 +162,74 @@ function ejemploCondicionalesHell(num) {
     }
 }
 
+
+
+function ejemploArray() {
+    // posición 0 a N-1 --> N es data.length
+    let data = [1, "hola", 2.2, true, [2, 3, 5], [[5, 3], [2, 7], [1, 10]]];
+    console.log(data[1]); //"hola"
+    console.log(data[data.length - 1]); //[[5,3],[2,7],[1,10]]
+    console.log(data[4][1]);
+    console.log(data[5][1][1]);
+
+    const fruits = ["Banana", "Orange", "Apple", "Strawberry", "Tangerine"];
+
+    for (let i = 0; i < fruits.length; i++) {
+        console.log(fruits[i]);
+    }
+
+    //Sólo para arrays For-each
+    fruits.forEach(function (fruit) {
+        console.log(fruit);
+    })
+
+    // Añadir elementos
+    fruits.push("Mango");
+    fruits.push("Rabsperry", "Grapes", "Melon");
+
+    console.log(fruits);
+
+    // Borrar elementos
+    //ultimo
+    fruits.pop();
+    console.log(fruits);
+
+}
+
+
+function sum(a, b) {
+    return a + b;
+}
+const res = sum(1, 3);
+console.log("El resultado fue " + res);
+console.log("El cuadrado del resultado es: " + res ** 2);
+
+// Función flecha
+const sum2 = (a, b) => a + b;
+const res2 = sum2(1, 3);
+console.log("El resultado fue " + res2);
+console.log("El cuadrado del resultado es: " + res2 ** 2);
+
+
+
+const sub = function (a, b) {
+    let result = a - b;
+    return result;
+}
+
+function getDate() {
+    const date = new Date();
+    return date;
+}
+
+function createUser(name) {
+
+    if (name.length > 0 && name.length < 10) {
+        return "usuario creado: " + name;
+    } else {
+        return "error nombre usuario";
+    }
+}
+
 // Ejecución de funciones
 //ejemploIfElse()

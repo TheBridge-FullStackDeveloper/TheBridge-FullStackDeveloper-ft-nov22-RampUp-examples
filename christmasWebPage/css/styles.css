@@ -137,6 +137,13 @@ nav{
     gap:10px;
 }
 
+.media-videos{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:15px;
+}
+
 input[type=text],input[type=email],input[type=submit],select{
     height: 30px;
     border-radius: 15px;

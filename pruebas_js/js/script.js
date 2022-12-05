@@ -231,5 +231,180 @@ function createUser(name) {
     }
 }
 
+function ejemploObjetos() {
+    let cars = [{ type: 'Fiat', model: '500', color: 'white' }, { type: 'Opel', model: 'Corsa', color: 'Blue' }, { type: 'Peugeot', model: '609', color: 'green' }]
+    cars[1]['model']
+
+    let cars2 = [{ type: 'Fiat', model: '500', color: 'white', 'max-tara': 1500 }, { type: 'Opel', model: 'Corsa', color: 'Blue', 'max-tara': 1600 }, { type: 'Peugeot', model: '609', color: 'green', 'max-tara': 1700 }]
+    cars2[1]['max-tara']
+    // cars[1].max-tara // Error  
+
+    let car = {
+        type: "Fiat",
+        model: "500",
+        color: "white",
+        'max-tara': 1700,
+        speed: 0,
+        drive: function (newSpeed) {
+            this.speed = newSpeed;
+            console.log("Estás conduciendo a:" + this.speed);
+        },
+        getInfo: function () {
+            console.log(this.type, this.model, this.color, this['max-tara']);
+        }
+    };
+}
+
+function ejemploString() {
+
+    let cadena = "hola que tal te va la vida";
+
+    for (let i = 0; i < cadena.length; i++) {
+        if (cadena[i] !== " ") {
+            console.log(cadena[i]);
+        }
+    }
+    text.slice(7, 13);
+
+    text.slice(-12);
+    let email = "hola@gmail.com"
+    email.slice(-4)
+
+
+    //Reemplazar parte de un string
+    let message = "hola que tal";
+    let arrMess = message.split(" ");
+    arrMess[0] = 'adios';
+    arrMess.join(" ");
+}
+
+
 // Ejecución de funciones
 //ejemploIfElse()
+
+// Lectura
+//TAG
+document.getElementsByTagName("a")
+document.getElementsByTagName("a")[1]
+document.getElementsByTagName("a")[1].href
+
+//ID
+document.getElementById("miId5");
+document.getElementById("miId5").innerHTML
+//ID escritura
+document.getElementById("miId5").innerHTML = "queso"
+
+// Lectura
+// Class
+document.getElementsByClassName("miClase");
+
+document.getElementsByClassName("miClase")[2]
+// Escritura
+// Class
+document.getElementsByClassName("miClase")[2].innerHTML = "paella";
+
+// Todas las <a>
+const links = document.getElementsByTagName("a");
+
+// Todos los links
+for (let i = 0; i < links.length; i++) {
+    console.log(links[i].href);
+}
+
+// Query Selector
+console.log("******************");
+
+let lista2 = document.querySelectorAll(".clase2 > a");
+console.log(lista2[0].href);
+console.log(lista2[1].href);
+
+
+
+console.log(document.querySelector('#miDiv .miClase').innerText)
+
+console.log(document.querySelector('#miDiv #miId1.miClase').innerText)
+
+let textos = document.querySelectorAll("#miDiv .miClase");
+
+// Todos los links
+for (let i = 0; i < textos.length; i++) {
+    console.log(textos[i].innerHTML);
+}
+/*
+
+// pruebas con selectores
+console.log(document.getElementById('miId1').innerText) // uno
+
+ // uno
+console.log(document.querySelectorAll("#miDiv .miClase"));
+*/
+
+
+document.querySelector("#boton1").addEventListener("click", displayDate);
+
+document.querySelector("#boton1").addEventListener("mouseout", sendAlert);
+
+function displayDate() {
+    document.getElementById("result1").innerHTML = Date();
+}
+
+function sendAlert() {
+    alert("Click me again please!!!!!");
+}
+
+document.getElementById("boton2").addEventListener("click", function () {
+    console.error("Alerta de fusión en el núcleo");
+    console.warn("Lean la documentación");
+});
+
+
+// Paso de valores por parámentro
+let p1 = 5;
+let p2 = 7;
+let result = 0;
+
+document.getElementById("boton3").addEventListener("click", function () {
+    myFunction(p1, p2);
+});
+
+function myFunction(a, b) {
+    if (result == 0) {
+        result = p1 + p2;
+        document.getElementById("result2").innerHTML += result;
+    }
+    else {
+        alert("Ya se hizo la cuenta");
+    }
+
+}
+
+// Crear nodo
+document.getElementById("boton4").addEventListener("click",function(){
+    const para = document.createElement("p");
+    const node = document.createTextNode("Texto creado desde JS");
+    
+    para.id = "p3";
+    para.appendChild(node);
+    
+    para.classList.add("new");
+
+    const element = document.getElementById("div1");
+    element.appendChild(para);
+})
+
+document.getElementById("boton5").addEventListener("click",function(){
+    const parent = document.getElementById("div1");
+    const child = document.getElementById("p1");
+    const para = document.createElement("p");
+    const node = document.createTextNode("Este es tu nuevo texto");
+    para.appendChild(node);
+    parent.replaceChild(para,child);
+
+})
+
+
+
+
+
+
+

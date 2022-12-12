@@ -25,29 +25,29 @@ document.querySelector("form.formulario-contacto").addEventListener("submit", fu
     const conditions = event.target.conditions.checked;
     const fav_event = event.target.fav_event.value;
 
-    let validated = true; 
+    let validated = true;
 
     if (name.length < 5) {
         alert("Nombre muy corto");
-        validated = false; 
+        validated = false;
     }
 
-    if (!email.includes("@") && !email.endsWith(".com") ) {
+    if (!email.includes("@") && !email.endsWith(".com")) {
         alert("Falta @ email y/o .com al final");
-        validated = false; 
+        validated = false;
     }
 
     if (fav == "") {
         alert("Selecciona algún favorito");
-        validated = false; 
+        validated = false;
     }
 
     if (!conditions) {
         alert("Falta aceptar condiciones");
-        validated = false; 
+        validated = false;
     }
     // Comprobación final - Todo validado
-    if (validated){
+    if (validated) {
         alert("ÉXITO - Formulario correcto y enviado")
         event.target.submit();
     }
